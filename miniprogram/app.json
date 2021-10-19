@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/repair/repair",
+    "pages/selectRecord/index",
+    "pages/sumRecord/index",
+    "pages/sumRecordResult/index",
+    "pages/updateRecord/index",
+    "pages/updateRecordResult/index",
+    "pages/updateRecordSuccess/index",
+    "pages/uploadFile/index"
+  ],
+  "subpackages": [{
+    "root": "packageA",
+    "pages": [
+      "pages/device/device",
+      "pages/list/list"
+    ]
+  }, {
+    "root": "packageB",
+    "name": "name2",
+    "pages": [
+      "pages/lists/lists"
+    ]
+  }],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "",
+    "navigationStyle": "custom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于天气效果展示"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#2f2f2f",
+    "selectedColor": "#1989fa",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/static/tabs/home.png",
+        "selectedIconPath": "/static/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/static/tabs/my.png",
+        "selectedIconPath": "/static/tabs/my-active.png"
+      },
+      {
+        "pagePath": "pages/repair/repair",
+        "text": "报修",
+        "iconPath": "/static/tabs/repair.png",
+        "selectedIconPath": "/static/tabs/repair-active.png"
+      }
+    ]
+  }
+}

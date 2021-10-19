@@ -1,0 +1,6 @@
+/* pages/repair/repair.wxss */
+.rep {
+  margin: 200px 50px 0px 50px;
+  color:#fff;
+  font-size: 20px;
+}

@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class="root-wrapper">
+  <view class="root">
+    <view class="header-wrapper">
+      <image style="height:40vh;z-index:-999;position:absolute;" mode="heightFix" src="/static/images/furniture.jpg">
+      </image>
+      <view class="header-content-wrapper">
+        <view class="header-title">
+          <text>空气质量-{{AirText}}</text>
+          <text>{{Area}}-{{City}}</text>
+        </view>
+        <view class="header-text">
+          <text>{{AirValue}}</text>
+          <text>{{Weather}}</text>
+        </view>
+        <view class="weather-advice">
+          {{WeatherAdvice}}
+        </view>
+      </view>
+    </view>
+    <view class="body-wrapper">
+      <view class="body">
+        <view class="device">
+          <view class="device-wrapper" bindtap="goToList">
+            <view class="device-title">
+              <span id="1">空调</span>
+              <span>设备状态</span>
+            </view>
+            <view class="device-text">
+              <span></span>
+              <view>
+                <span>{{deviceStatus}}</span>
+              </view>
+            </view>
+            <view class="device-advice">轻触进入设备界面</view>
+          </view>
+          <view class="device-wrapper" bindtap="goToDevice">
+            <view class="device-title">
+              <span id="2">宿舍门</span>
+              <span>设备状态</span>
+            </view>
+            <view class="device-text">
+              <span></span>
+              <view>
+                <span>{{deviceStatus}}</span>
+              </view>
+            </view>
+            <view class="device-advice">轻触进入设备界面</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="bottom-wrapper">
+      <view class="bottom-text">
+        <view bindtap="add">+添加设备</view>
+      </view>
+    </view>
+  </view>
+  <!-- <image src="../../static/images/add.png" bindtap="" class='add-logo'></image> -->
+</view>

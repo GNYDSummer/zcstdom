@@ -1,0 +1,23 @@
+<!--pages/list/list.wxml-->
+<view class="container" style="position: relative; left: -2rpx; top: 84rpx">
+  <button type="default" size="mini" plain="true" bindtap="close"
+    style="color: #fff; position: relative; left: -308rpx; top: -95rpx">＜返回</button>
+  <view style="width: 218rpx; height: 361rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+    <input class="status" bindinput="addTemp"
+      style="width: 218rpx; height: 120rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx; color: #fff"
+      value="{{temp}}"></input>
+    <view class="status" style="position: relative; left: 129rpx; top: -307rpx">℃</view>
+  </view>
+  <!-- <image src="{{img_url}}" class="btn" bindtap="changeStatus">
+  </image> -->
+  <view bindsubmit="formSubmit">
+    <switch bindchange="onAirConChange" bindtap="closeAir" color="#3d7e9f"></switch>
+  </view>
+  <!-- <view hidden="">
+  </view> -->
+  <image src="../../../static/images/arrow-up-bold.png" class="btn-up" bindtap="onClickUp"></image>
+  <image src="../../../static/images/arrow-down-bold.png" class="btn-down" bindtap="onClickDown"></image>
+  <!-- <input placeholder="请输入空调温度" bindinput="addTemp" type="text" class="int"
+    style="width: 269rpx; height: 58rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"></input> -->
+  <button type="primary" class="btn" bindtap="adData">发送</button>
+</view>

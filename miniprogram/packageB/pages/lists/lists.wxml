@@ -1,0 +1,37 @@
+<!--pages/lists/lists.wxml-->
+<view class="main-box">
+  <view class="toastbg"></view>
+  <view class="toast-box">
+    <view class="top-title">
+      <text>添加阿里云设备</text>
+      <text bindtap="cancel">╳</text>
+    </view>
+    <form bindsubmit="AliConfirm">
+      <view class="input-area">
+        <view class="input-area">
+          <text>产品秘钥:</text>
+          <input class="inputs" placeholder="输入productkey" name="productkey"></input>
+        </view>
+        <view class="input-area">
+          <text>设备名:</text>
+          <input class="inputs" placeholder="输入devicename" name="devicename"></input>
+        </view>
+        <view class="input-area">
+          <text>设备秘钥:</text>
+          <input class="inputs" placeholder="输入devicesecret" password name="devicesecret"></input>
+        </view>
+        <view class="input-area">
+          <text>上行主题:</text>
+          <input class="inputs" placeholder="输入uptopic" name="uptopic"></input>
+        </view>
+        <view class="input-area">
+          <text>下行主题:</text>
+          <input class="inputs" placeholder="输入dowtopic" name="downtopic"></input>
+        </view>
+      </view>
+      <view class="bt-area">
+        <button form-type="submit">确定</button>
+      </view>
+    </form>
+  </view>
+</view>

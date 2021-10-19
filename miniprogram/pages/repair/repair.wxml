@@ -1,0 +1,13 @@
+<!--pages/repair/repair.wxml-->
+
+<!--添加数据-->
+<form bindsubmit="formSubmit" class="rep">
+<input placeholder='输入学号' bindinput="addStuId" value='{{form_info}}'></input>
+<input placeholder='输入名字' bindinput="addStuName" value='{{form_info}}'></input>
+<input placeholder='输入手机号' bindinput="addStuPhone" value='{{form_info}}'></input>
+<input placeholder='输入宿舍楼' bindinput="addStuDormitory" value='{{form_info}}'></input>
+<input placeholder='输入宿舍号' bindinput="addStuDormitoryNum" value='{{form_info}}'></input>
+<input placeholder='输入设备号' bindinput="addDeviceId" value='{{form_info}}'></input>
+<input placeholder='输入故障信息' bindinput="addErrMessage" value='{{form_info}}'></input>
+<button bindtap="addData" type='primary'>提交</button>
+</form>
